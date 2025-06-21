@@ -1,0 +1,6 @@
+# .nvmrc
+18
+
+# OR netlify.toml
+[build.environment]
+  NODE_VERSION = "18"
