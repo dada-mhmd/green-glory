@@ -24,15 +24,15 @@ const HeroSection: React.FC = () => {
       />
 
       {/* Hero Content */}
-      <div className='relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+      <div className='relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-10'>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className='glass-panel p-8 md:p-12 rounded-3xl'
+          className='glass-panel p-8 md:p-12 rounded-3xl my-10'
         >
           {/* Floating Icons */}
-          <div className='flex justify-center space-x-8 mb-6'>
+          {/* <div className='flex justify-center space-x-8 mb-6'>
             <div className='w-12 h-12 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-xl flex items-center justify-center'>
               <Leaf className='w-6 h-6 text-white' />
             </div>
@@ -42,15 +42,18 @@ const HeroSection: React.FC = () => {
             <div className='w-12 h-12 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-xl flex items-center justify-center'>
               <Sparkles className='w-6 h-6 text-white' />
             </div>
-          </div>
+          </div> */}
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className='text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight'
+            className='text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight mt-10'
           >
-            <span className='gradient-text neon-text'>Green Glory</span>
+            {/* <span className='gradient-text neon-text'>Green Glory</span> */}
+            <span className='bg-gradient-to-r from-cyan-200 via-cyan-400 to-cyan-800 text-clip text-transparent bg-clip-text'>
+              Green Glory
+            </span>
             <br />
             <span className='text-white'>Future of</span>
             <br />
