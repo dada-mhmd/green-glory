@@ -86,6 +86,12 @@ const HeroSection: React.FC = () => {
             <Button
               size='lg'
               className='glass-button hover-glow text-lg px-8 py-4 rounded-full group'
+              onClick={() => {
+                const section = document.getElementById('services');
+                if (section) {
+                  section.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               Explore Services
               <ArrowRight className='ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform' />
